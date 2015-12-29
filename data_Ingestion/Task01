@@ -1,0 +1,19 @@
+In this task we will upload the dataset to hadoop cluster.
+1- Go to unzipped directory which we created in Task00. Let's say, the files are unzipped in /home/horton/HDPCD-Certification-master.
+2- Copy the contents of /home/horton/HDPCD-Certification-master/datasets/ to hadoop.
+
+
+
+
+
+
+
+
+
+
+
+Solutions:
+1- Change directory to unzipped folder
+    cd /home/horton/HDPCD-Certification-master
+2- Copy flightdelays folder from datasets folder.
+    hdfs dfs -put datasets/flightdelays
