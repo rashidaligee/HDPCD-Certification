@@ -1,0 +1,5 @@
+== Sqoop Import ==
+We will be ingesting data from a relational database. Actually the data that is exported in Task03 will be imported with sqoop.
+
+1. database is flightinfo and table name is weather and mysql is installed on server namenode.
+2. username/passwords are root/hadoop respectively
