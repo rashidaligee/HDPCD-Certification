@@ -1,0 +1,22 @@
+== Sqoop Export ==
+I am using Hortonworks Practice exam environment which has the mysql database and table. 
+If you are using any other environment, you would need to create database and table as suggested in point 2.
+
+1- Put the local file /home/hortonworks/datasets/flightdelays/sfo_weather.csv into HDFS in a new directory named /user/hortonworks/weather/
+
+2-Note there is a MySQL database named flightinfo on the namenode machine. It contains a table named weather with the following schema:
+
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| station       | varchar(100) | YES  |     | NULL    |       |
+| year          | int(11)      | YES  |     | NULL    |       |
+| month         | int(11)      | YES  |     | NULL    |       |
+| dayofmonth    | int(11)      | YES  |     | NULL    |       |
+| precipitation | int(11)      | YES  |     | NULL    |       |
+| maxtemp       | int(11)      | YES  |     | NULL    |       |
+| mintemp       | int(11)      | YES  |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+            
+
+3-Use Sqoop to export the weather directory in HDFS to the weather table in MySQL on port 3306 on the namenode machine. The username for MySQL is root and the password is hadoop
