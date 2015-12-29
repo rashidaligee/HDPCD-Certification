@@ -1,0 +1,4 @@
+== FLUME Ingestion ==
+In this task, data needs to be ingested into Hadoop using Apache Flume.
+The files needs to be ingested can be found in /home/horton/HDPCD-Certification-master/datasets/flumeData
+The data will be ingested in flumeData folder in home directory in hadoop. In my case it is /home/horton/
