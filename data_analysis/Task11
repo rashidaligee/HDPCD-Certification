@@ -1,0 +1,9 @@
+==Define and Populate an ORCFile Table==
+
+    Define a Hive table named sfo_weather that satisfies all of the following criteria:
+        A Hive-managed table
+        The data is stored in the ORCFile format
+        The table is populated with the records in the datasets/flightdelays/sfo_weather.csv file on the client machine.
+        The schema matches the columns in sfo_weather.csv - 
+          the first column is a string named station_name, 
+          followed by integers for the Year, Month, DayOfMonth, precipitation, temperature_max, and temperature_min
