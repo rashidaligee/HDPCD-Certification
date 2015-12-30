@@ -1,0 +1,4 @@
+SET hive.execution.engine= tez;
+
+DROP TABLE IF EXISTS flights_weather;
+CREATE TABLE flights_weather STORED AS TEXTFILE AS SELECT fd.*, sw.temperature_max, sw.temperature_min FROM flightdelays fd JOIN sfo_weather sw ON fd.year = sw.year AND fd.month = sw.month AND fd.dayofmonth = sw.dayofmonth WHERE fd.origin = 'SFO' OR fd.dest = 'SFO';
