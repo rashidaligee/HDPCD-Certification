@@ -1,0 +1,8 @@
+== Pig Joins ==
+In this task we will perform joins on two relation in Pig.
+
+  - LOAD '/user/horton/flightdelays_clean/' into a relation
+  - LOAD '/user/horton/flightdelays/sfo_weather.csv' into another relation.
+  - JOin these two relation by year, month and day of month fields
+  - Save the results in pigjoin folder.
+  
