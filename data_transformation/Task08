@@ -1,0 +1,8 @@
+==Use HCatalog with Pig==
+
+    Write a Pig script Task08.pig that satisfies all of the following criteria:
+        Run the Pig query using Tez as the execution engine
+        Load the data from the flightdelays table in Hive using HCatalog
+        Remove any rows where the arrdelay is less than or equal to 0
+        Order the output by the arrdelay value descending
+        Store the output as three comma-separated files in a new directory in HDFS named /user/horton/flightdelays_nonzero
