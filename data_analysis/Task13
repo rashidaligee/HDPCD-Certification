@@ -1,0 +1,7 @@
+Hive Partitioned Tables
+
+    Write a Hive query in a file named Task13.hive that satisfies the following criteria:
+        Define a new Hive-managed table named weather_partitioned that has the same schema as the sfo_weather table
+        The table is partitioned on the year and month columns
+        The data is stored in the ORCFile format
+        Insert the records from January, 2008, of the sfo_weather table into the appropriate partition of weather_partitioned
