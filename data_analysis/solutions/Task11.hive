@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS sfo_weather_txt;
+
+CREATE TABLE sfo_weather_txt(station_name STRING,
+          Year INT, Month INT, DayOfMonth INT, precipitation INT, temperature_max INT, temperature_min INT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+LOAD DATA LOCAL INPATH '/home/horton/HDPCD-Certification-master/datasets/flightdelays/sfo_weather.csv' OVERWRITE INTO TABLE sfo_weather_txt;
+
+DROP TABLE IF EXISTS sfo_weather;
+CREATE TABLE sfo_weather(station_name STRING,
+          Year INT, Month INT, DayOfMonth INT, precipitation INT, temperature_max INT, temperature_min INT)
+STORED AS ORC;
+
+INSERT INTO TABLE sfo_weather SELECT * FROM sfo_weather_txt;
