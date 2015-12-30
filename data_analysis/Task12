@@ -1,0 +1,9 @@
+Hive Join
+
+    Write a Hive query in a file named Task12.hive that satisfies the following criteria:
+        Use Tez as the execution engine
+        The result of the query is in a new Hive-managed table named flights_weather stored as a textfile
+        Join the flightdelays table with the sfo_weather table where dest or origin equals "SFO" in flightdelays, 
+        and the year, month and dayofmonth are equal in the two tables
+        Select all columns from the flightdelays table, and the temperature_max and temperature_min columns from sfo_weather
+
