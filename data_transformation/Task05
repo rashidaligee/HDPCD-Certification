@@ -1,0 +1,18 @@
+==Cleanse Data using Pig==
+
+    Notice the comma-separated values of the flightdelays files in HDFS contain historical data for airline flight delays. 
+
+    The columns in the files match the following schema:
+    Year, Month, DayofMonth, DayOfWeek, DepTime, CRSDepTime, ArrTime, CRSArrTime,
+    UniqueCarrier, FlightNum, TailNum, ActualElapsedTime, CRSElapsedTime, AirTime,
+    ArrDelay, DepDelay, Origin, Dest, Distance, TaxiIn, TaxiOut, Cancelled, 
+    CancellationCode, Diverted, CarrierDelay, WeatherDelay, NASDelay, SecurityDelay,
+    LateAircraftDelay                
+                    
+
+    Write a Pig script that satisfies all of the following criteria:
+    -  Load all of the data in /user/horton/flightdelays/flight*
+    -  Remove all rows in the flightdelays data where the DepTime column equals the string "NA".
+    -  The output should only contain the Year, Month, DayofMonth, DepTime, UniqueCarrier, FlightNum, ArrDelay, Origin and Dest
+    -  Store the result as comma-separated records in a new directory in HDFS named /user/horton/flightdelays_clean
+    -  Save the script in a file named Task05.pig.
