@@ -1,0 +1,6 @@
+==Define a Hive Table==
+
+    Define a Hive table named flightdelays that matches the data stored in your /user/horton/flightdelays_clean directory in HDFS. The Hive table should satisfy all of the following criteria:
+        An external table with the location set to /user/horton/flightdelays_clean
+        The schema matches the columns Year, Month, DayOfMonth, DepTime, UniqueCarrier, FlightNum, ArrDelay, Origin and Dest
+        The UniqueCarrier, Origin and Dest columns are string types; the other columns are all integers
