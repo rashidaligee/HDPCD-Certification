@@ -1,0 +1,6 @@
+Analyzing Data with Hive
+
+    Write a Hive query for each of the tasks below. Save the queries in a single text file named Task10.hive:
+        Compute the average arrdelay of flights landing in Denver (dest equals "DEN")
+        Compute the average arrdelay of flights where the origin is LAX and the dest is SFO
+        Determine which dest airport had the highest average arrdelay
