@@ -1,0 +1,4 @@
+
+SELECT AVG(arrdelay) FROM flightdelays WHERE dest = 'DEN';
+SELECT AVG(arrdelay) FROM flightdelays WHERE origin = 'LAX' AND dest = 'SFO';
+SELECT AVG(arrdelay) AS delay, dest FROM flightdelays GROUP BY dest ORDER BY delay DESC LIMIT 1;
